@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1F8E31B-853B-4088-994C-264B855BEDE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SE104.L23</RootNamespace>
+    <AssemblyName>SE104.L23</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\..\WindowsFormsApp1\packages\Bunifu.UI.WinForms.5.0.7\lib\net40\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>D:\CNPM\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieu.cs">
+      <DependentUpon>DuLieu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DuLieu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DuLieu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonBaoCao.Designer.cs">
+      <DependentUpon>HoaDonBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainmenu.Designer.cs">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BenXe.cs" />
+    <Compile Include="Model\ChuyenDi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhCong.Designer.cs">
+      <DependentUpon>ThanhCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ve.cs" />
+    <Compile Include="ThatBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThatBai.Designer.cs">
+      <DependentUpon>ThatBai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViTriGhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViTriGhe.Designer.cs">
+      <DependentUpon>ViTriGhe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoThang.rdlc" />
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBaoCao.resx">
+      <DependentUpon>HoaDonBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainmenu.resx">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThanhCong.resx">
+      <DependentUpon>ThanhCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThatBai.resx">
+      <DependentUpon>ThatBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViTriGhe.resx">
+      <DependentUpon>ViTriGhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DuLieu.xsc">
+      <DependentUpon>DuLieu.xsd</DependentUpon>
+    </None>
+    <None Include="DuLieu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DuLieu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DuLieu.xss">
+      <DependentUpon>DuLieu.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-dangnhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-datve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-qlcd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-qlbx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-tkbc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-dangxuat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-tracuu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-TraCuuSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-Them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khung5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-XemBaoCao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-InBC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-QLND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-QuyDinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-ThayDoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-ThayDoiGia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-LuuThayDoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-LuuThayDoi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Datve_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Qlcd_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_QD_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Qlbx_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Qlnd_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_tkbc_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-capnhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

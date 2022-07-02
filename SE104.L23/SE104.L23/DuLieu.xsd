@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DuLieu" targetNamespace="http://tempuri.org/DuLieu.xsd" xmlns:mstns="http://tempuri.org/DuLieu.xsd" xmlns="http://tempuri.org/DuLieu.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DuLieu" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DuLieu" msprop:Generator_UserDSName="DuLieu">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Báo_x0020_cáo_x0020_Tháng" msprop:Generator_TableClassName="Báo_cáo_ThángDataTable" msprop:Generator_TableVarName="tableBáo_cáo_Tháng" msprop:Generator_TablePropName="Báo_cáo_Tháng" msprop:Generator_RowDeletingName="Báo_cáo_ThángRowDeleting" msprop:Generator_RowChangingName="Báo_cáo_ThángRowChanging" msprop:Generator_RowEvHandlerName="Báo_cáo_ThángRowChangeEventHandler" msprop:Generator_RowDeletedName="Báo_cáo_ThángRowDeleted" msprop:Generator_UserTableName="Báo cáo Tháng" msprop:Generator_RowChangedName="Báo_cáo_ThángRowChanged" msprop:Generator_RowEvArgName="Báo_cáo_ThángRowChangeEvent" msprop:Generator_RowClassName="Báo_cáo_ThángRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STT" msprop:Generator_ColumnVarNameInTable="columnSTT" msprop:Generator_ColumnPropNameInRow="STT" msprop:Generator_ColumnPropNameInTable="STTColumn" msprop:Generator_UserColumnName="STT" type="xs:string" minOccurs="0" />
+              <xs:element name="BenXeDen" msprop:Generator_ColumnVarNameInTable="columnBenXeDen" msprop:Generator_ColumnPropNameInRow="BenXeDen" msprop:Generator_ColumnPropNameInTable="BenXeDenColumn" msprop:Generator_UserColumnName="BenXeDen" type="xs:string" minOccurs="0" />
+              <xs:element name="BenXeDi" msprop:Generator_ColumnVarNameInTable="columnBenXeDi" msprop:Generator_ColumnPropNameInRow="BenXeDi" msprop:Generator_ColumnPropNameInTable="BenXeDiColumn" msprop:Generator_UserColumnName="BenXeDi" type="xs:string" minOccurs="0" />
+              <xs:element name="SoVe" msprop:Generator_ColumnVarNameInTable="columnSoVe" msprop:Generator_ColumnPropNameInRow="SoVe" msprop:Generator_ColumnPropNameInTable="SoVeColumn" msprop:Generator_UserColumnName="SoVe" type="xs:string" minOccurs="0" />
+              <xs:element name="DoanhThu" msprop:Generator_ColumnVarNameInTable="columnDoanhThu" msprop:Generator_ColumnPropNameInRow="DoanhThu" msprop:Generator_ColumnPropNameInTable="DoanhThuColumn" msprop:Generator_UserColumnName="DoanhThu" type="xs:string" minOccurs="0" />
+              <xs:element name="TyLe" msprop:Generator_ColumnVarNameInTable="columnTyLe" msprop:Generator_ColumnPropNameInRow="TyLe" msprop:Generator_ColumnPropNameInTable="TyLeColumn" msprop:Generator_UserColumnName="TyLe" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Báo_x0020_cáo_x0020_Năm" msprop:Generator_TableClassName="Báo_cáo_NămDataTable" msprop:Generator_TableVarName="tableBáo_cáo_Năm" msprop:Generator_TablePropName="Báo_cáo_Năm" msprop:Generator_RowDeletingName="Báo_cáo_NămRowDeleting" msprop:Generator_RowChangingName="Báo_cáo_NămRowChanging" msprop:Generator_RowEvHandlerName="Báo_cáo_NămRowChangeEventHandler" msprop:Generator_RowDeletedName="Báo_cáo_NămRowDeleted" msprop:Generator_UserTableName="Báo cáo Năm" msprop:Generator_RowChangedName="Báo_cáo_NămRowChanged" msprop:Generator_RowEvArgName="Báo_cáo_NămRowChangeEvent" msprop:Generator_RowClassName="Báo_cáo_NămRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STT" msprop:Generator_ColumnVarNameInTable="columnSTT" msprop:Generator_ColumnPropNameInRow="STT" msprop:Generator_ColumnPropNameInTable="STTColumn" msprop:Generator_UserColumnName="STT" type="xs:string" minOccurs="0" />
+              <xs:element name="Thang" msprop:Generator_ColumnVarNameInTable="columnThang" msprop:Generator_ColumnPropNameInRow="Thang" msprop:Generator_ColumnPropNameInTable="ThangColumn" msprop:Generator_UserColumnName="Thang" type="xs:string" minOccurs="0" />
+              <xs:element name="Chuyến_x0020_đi" msprop:Generator_ColumnVarNameInTable="columnChuyến_đi" msprop:Generator_ColumnPropNameInRow="Chuyến_đi" msprop:Generator_ColumnPropNameInTable="Chuyến_điColumn" msprop:Generator_UserColumnName="Chuyến đi" type="xs:string" minOccurs="0" />
+              <xs:element name="DoanhThu" msprop:Generator_ColumnVarNameInTable="columnDoanhThu" msprop:Generator_ColumnPropNameInRow="DoanhThu" msprop:Generator_ColumnPropNameInTable="DoanhThuColumn" msprop:Generator_UserColumnName="DoanhThu" type="xs:string" minOccurs="0" />
+              <xs:element name="TyLe" msprop:Generator_ColumnVarNameInTable="columnTyLe" msprop:Generator_ColumnPropNameInRow="TyLe" msprop:Generator_ColumnPropNameInTable="TyLeColumn" msprop:Generator_UserColumnName="TyLe" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
